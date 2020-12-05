@@ -288,6 +288,9 @@ namespace {
                 result->Success(wideCharToString(path.c_str(), path.size()));
 
             }
+            else if (method_call.method_name().compare("clear") == 0) {
+                result->Success();
+            }
             else {
                 std::vector<std::wstring> vExtensions;
                 bool bFound = false;
