@@ -35,13 +35,11 @@ example/.flutter-plugins-dependencies
 file_picker/example/.flutter-plugins-dependencies
 file_picker/example/ios/Flutter/flutter_export_environment.sh
 
-example/windows/*
 *.vcxproj
 .vs/*
 *.sln
-!*.cpp
-!*.h
-!example/windows/runner/*
-!*.manifest
-!*.rc
+*.filters
+*.exe
+example/windows/CMakeCache.txt
+example/windows/CMakeFiles/*
 
