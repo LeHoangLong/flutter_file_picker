@@ -10,3 +10,6 @@ packages
 pubspec.lock
 .flutter-plugins
 Podfile.lock
+*.cmake
+*.depend
+CMakeFiles/
