@@ -36,10 +36,16 @@ file_picker/example/.flutter-plugins-dependencies
 file_picker/example/ios/Flutter/flutter_export_environment.sh
 
 *.vcxproj
-.vs/*
+.vs
 *.sln
 *.filters
 *.exe
 example/windows/CMakeCache.txt
 example/windows/CMakeFiles/*
-
+*.tlog
+*.obj
+*.pdb
+*.prefs
+Debug/
+!example/android/app/src/debug/
+!example/android/app/src/debug/AndroidManifest.xml

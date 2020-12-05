@@ -143,7 +143,7 @@ namespace {
                 IID_IFileOpenDialog, reinterpret_cast<void**>(&pFileOpen));
 
             if (SUCCEEDED(hr)) {
-                IShellItem* pItem;
+                IShellItemArray* pItems;
                 DWORD dwOptions;
 
                 hr = pFileOpen->SetTitle(_sTitle.c_str());
@@ -163,14 +163,30 @@ namespace {
                             if (SUCCEEDED(hr)) {
                                 hr = pFileOpen->Show(NULL);
                                 if (SUCCEEDED(hr)) {
-                                    hr = pFileOpen->GetResult(&pItem);
+                                    hr = pFileOpen->GetResults(&pItems);
                                     if (SUCCEEDED(hr)) {
                                         PWSTR pszFilePath;
-                                        hr = pItem->GetDisplayName(SIGDN_FILESYSPATH, &pszFilePath);
+                                        DWORD nItemCount;
+                                        hr = pItems->GetCount(&nItemCount);
                                         if (SUCCEEDED(hr)) {
-                                            o_results.push_back(std::wstring(pszFilePath));
+                                            for (int i = 0; i < nItemCount; i++) {
+                                                IShellItem* pIShellItem;
+                                                hr = pItems->GetItemAt(i, &pIShellItem);
+                                                if (SUCCEEDED(hr)) {
+                                                    hr = pIShellItem->GetDisplayName(SIGDN_FILESYSPATH, &pszFilePath);
+                                                    if (SUCCEEDED(hr)) {
+                                                        o_results.push_back(std::wstring(pszFilePath));
+                                                    }
+                                                    else {
+                                                        break;
+                                                    }
+                                                }
+                                                else {
+                                                    break;
+                                                }
+                                            }
                                         }
-                                        pItem->Release();
+                                        pItems->Release();
                                     }
                                 }
                             }
