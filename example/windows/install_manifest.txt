@@ -1,9 +1,0 @@
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/icudtl.dat
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/flutter_windows.dll
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/file_picker_plugin.dll
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/flutter_assets/AssetManifest.json
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/flutter_assets/FontManifest.json
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/flutter_assets/NOTICES
-C:/HoangLong/project/OrderAppFrontend/flutter/file_picker/example/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf

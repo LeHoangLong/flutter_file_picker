@@ -49,3 +49,6 @@ example/windows/CMakeFiles/*
 Debug/
 !example/android/app/src/debug/
 !example/android/app/src/debug/AndroidManifest.xml
+example/windows/flutter/generated_plugin_registrant.cc
+example/windows/flutter/generated_plugin_registrant.h
+example/windows/install_manifest.txt
